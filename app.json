@@ -11,20 +11,56 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Permitir acceso a la cámara",
+        "NSPhotoLibraryUsageDescription": "Permitir acceso a la galería de fotos",
+        "NSContactsUsageDescription": "Permitir acceso a los contactos",
+        "NSPhoneCallUsageDescription": "Permitir realizar llamadas telefónicas",
+        "NSLocationWhenInUseUsageDescription": "Permitir acceso a la ubicación del dispositivo"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "CALL_PHONE",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "permissions": {
+            "ios": {
+              "allowsMultipleSelection": true,
+              "writeOnly": true,
+              "allowEdit": true,
+              "allowsEditing": true
+            },
+            "android": {
+              "writeOnly": true,
+              "maxWidth": 800,
+              "maxHeight": 800,
+              "quality": 0.7,
+              "allowsEditing": true,
+              "aspect": [4, 3]
+            }
+          }
+        }
+      ]
+    ]
   }
 }
