@@ -21,3 +21,4 @@ Para utilizar Llauhome, sigue los siguientes pasos:
    _![QR.png](QR.png)_
 
    El código QR te llevará a la aplicación Llauhome en Expo, donde podrás acceder a todas las funcionalidades y disfrutar de la experiencia de compra de frutas y verduras frescas de proximidad directamente desde productores locales.
+   Es importante que te logues para tener acceso a todas las funcionalidades.
