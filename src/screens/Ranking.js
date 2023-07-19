@@ -24,7 +24,7 @@ export function Ranking(props) {
 
     onSnapshot(q, (snapshot) => {
       const data = snapshot.docs.map((doc) => {
-        return { ...doc.data(), id: doc.id };
+        return { ...doc.data(), id: doc.id }; 
       });
       setProductos(data);
     });
