@@ -1,4 +1,6 @@
-## Llauhome - Plataforma de Compra de Productos de Proximidad
+![Encabezado del Proyecto](./header.png)
+# Llauhome
+## Plataforma de Compra de Productos de Proximidad
 
 Llauhome es una aplicación móvil desarrollada con React Native y Expo, conectada a Firebase, que permite a los productores de proximidad de frutas y verduras vender sus productos directamente a minoristas o clientes particulares. La plataforma busca eliminar los intermediarios y comisionistas, fomentando el desarrollo local y la transparencia en la compra de productos frescos.
 
